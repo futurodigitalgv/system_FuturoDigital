@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Gestão</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-container">
+            <img id="logoImage" src="../images/default-logo.png" alt="Logo da Empresa" class="logo-img">
+        </div>
+        <nav id="menu">
+            <a href="#" class="menu-item admin-only" data-module="configuracoes">
+                <i class="fas fa-cog"></i>
+                Configurações
+            </a>
+            <a href="#" class="menu-item admin-only" data-module="usuarios">
+                <i class="fas fa-users"></i>
+                Cadastro de Usuários
+            </a>
+            <a href="#" class="menu-item admin-only" data-module="produtos">
+                <i class="fas fa-box"></i>
+                Cadastro de Produtos
+            </a>
+            <a href="#" class="menu-item admin-only" data-module="fornecedores">
+                <i class="fas fa-truck"></i>
+                Cadastro de Fornecedores
+            </a>
+            <a href="#" class="menu-item" data-module="clientes">
+                <i class="fas fa-address-card"></i>
+                Cadastro de Clientes
+            </a>
+            <a href="#" class="menu-item" data-module="vendas">
+                <i class="fas fa-shopping-cart"></i>
+                Vendas
+            </a>
+            <a href="#" class="menu-item" data-module="ordens">
+                <i class="fas fa-tools"></i>
+                Ordem de Serviço
+            </a>
+            <a href="#" class="menu-item admin-only" data-module="relatorios">
+                <i class="fas fa-chart-bar"></i>
+                Relatórios
+            </a>
+            <a href="#" id="logout" class="menu-item">
+                <i class="fas fa-sign-out-alt"></i>
+                Sair
+            </a>
+        </nav>
+        <div class="user-info">
+            <span id="username">Carregando...</span>
+            <span id="userRole" class="user-role">Carregando...</span>
+        </div>
+    </div>
+    <div class="main-content">
+        <div id="content" class="content">
+            <h2>Bem-vindo ao Sistema de Gestão</h2>
+            <p>Selecione um módulo no menu lateral para começar.</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html> 
